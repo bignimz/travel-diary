@@ -1,12 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h2>Welcome</h2>
-  </body>
-</html>
+{% extends "base.html" %} {% block body %}
+<h2 class="text-center mt-5 mb-2">Welcome To My Travel Diary!</h2>
+<p class="lead text-center mb-5">
+  Take a look at some of my many Amazing Experiences ranging from Travel, Fun,
+  Life, Food and many more.
+</p>
+<div class="container">
+  <h3 class="text-center my-4">View Images by Location</h3>
+  <select
+    class="cat-select form-select mt-2 mb-5"
+    aria-label="Default select example"
+  >
+    <option selected>Choose a Location</option>
+    {% for location in location %}
+    <option value="{{image.location.id}}">{{image.location.name}}</option>
+    {% endfor %}
+  </select>
+</div>
+<div class="container">
+  <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
+    {% for card in travel %}
+    <div class="col-md-4 mx-auto my-2">
+      <a
+        href="#"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal{{card.id}}"
+      >
+        <div class="card" style="width: 25rem">
+          <img src="{{card.img.url}}" class="card-img-top" alt="..." />
+          <!-- <div class="card-body">
+            <h5 class="card-title">{{card.title}}</h5>
+          </div> -->
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+    <!-- Modal -->
+    {% for card in travel %}
+    <div
+      class="modal fade"
+      id="exampleModal{{card.id}}"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{{card.title}}</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="{{card.img.url}}" class="card-img-top" alt="..." />
+            <p class="my-2">{{card.content}}</p>
+            <p class="fw-bold">Location: {{card.location}}</p>
+            Category: <span class="badge bg-dark mx-2">{{card.category}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
