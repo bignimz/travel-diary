@@ -57,7 +57,24 @@
             <img src="{{card.img.url}}" class="card-img-top" alt="..." />
             <p class="my-2">{{card.content}}</p>
             <p class="fw-bold">Location: {{card.location}}</p>
-            Category: <span class="badge bg-dark mx-2">{{card.category}}</span>
+            <div class="d-flex justify-content-between">
+              <div class="category">
+                Category:
+                <span class="badge bg-dark mx-2">{{card.category}}</span>
+              </div>
+              <button
+                class="btn"
+                value="http://127.0.0.1:8000{{card.image.url}}"
+                onclick="copylink(this.value)"
+                title="Click to copy image link"
+              >
+                <img
+                  src="../static/images/copy.png"
+                  alt=""
+                  style="width: 30px; height: 30px"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
