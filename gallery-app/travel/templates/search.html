@@ -1,0 +1,59 @@
+{% extends "base.html" %} {% block body %}
+<h3 class="my-3 text-center">Search Results</h3>
+<div class="container">
+  {% if images %}
+  <p>Search Results for {{message}} has found {{images|length}} images!</p>
+  {% else %}
+  <p>No Images Found {{message}}</p>
+  {% endif %}
+  <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
+    {% if images %} {% for image in images %}
+    <div class="col-lg-3 col-md-3 col-sm-12 my-3 mx-3">
+      <div class="card" style="width: 18rem">
+        <img src="{{image.img.url}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{image.title}}</h5>
+          <a
+            href="#"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal{{image.id}}"
+            >View This Travel</a
+          >
+        </div>
+      </div>
+    </div>
+    {% endfor %} {% endif %}
+
+    <!-- Modal -->
+    {% for image in images %}
+    <div
+      class="modal fade"
+      id="exampleModal{{image.id}}"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{{image.title}}</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="{{image.img.url}}" class="card-img-top" alt="..." />
+            <p class="my-2">{{image.content}}</p>
+            <p class="fw-bold">Location: {{image.location}}</p>
+            Category: <span class="badge bg-dark mx-2">{{image.category}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
