@@ -14,6 +14,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     <!-- Custom Theme CSS -->
     <link rel="stylesheet" href="{% static 'css/mycss/styles.css' %}" />
     <title>My Travel Diary</title>
@@ -106,6 +109,19 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+
+      function copylink(value) {
+          console.log('hi yellow')
+          function handler(event){
+              event.clipboardData.setData('text/plain', value);
+              event.preventDefault();
+              document.removeEventListener('copy', handler, true);
+          }
+          document.addEventListener('copy', handler, true);
+          document.execCommand('copy');
+      }
+      </script>
     <!-- <script src="{static, 'js/main.js'}"></script> -->
   </body>
 </html>
