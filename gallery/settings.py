@@ -18,7 +18,7 @@ SECRET_KEY = 'b!5vs)8i%2#f&44s5s-#onqs9tho+vzgf^u62m#ni647rb$n0g'
 # If Production
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','https://bignimz-diary.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost','.herokuapp.com', '127.0.0.1']
 
 DISABLE_COLLECTSTATIC=1
 
