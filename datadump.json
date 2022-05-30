@@ -1,0 +1,1250 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "travel",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "travel",
+        "model": "location"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "travel",
+        "model": "tag"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "travel",
+        "model": "image"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "a4g4ebittbfnb9qy32bcwn48jizrli58",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAURO_C2hA-UPi4dN8zEAofqRpISrsy3t026UJ3k3lv5s182Nbit06LnxO7MmCX324K8Un1AOkR6r3x2Oq6zBM_FH7SzseW6HU73b-DEnrZ145yFEIBGdTWmgxZKasVDYiAVqADJJLJGTAaZBJmCCliEFqqvCfJPl-3Szbu:1nvNyU:_XtjLdAy6iFjOL642PEIvPt4pranf_FlKyIp5y9Tiqw",
+        "expire_date": "2022-06-12T18:49:14.078Z"
+    }
+},
+{
+    "model": "travel.image",
+    "pk": 1,
+    "fields": {
+        "title": "The taste of diversity: food tour in Mauritius",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "location": 6,
+        "img": "pic/22/mauritius-food-tour-traditioneel.jpg",
+        "category": [
+            1,
+            4
+        ],
+        "tags": [
+            3
+        ]
+    }
+},
+{
+    "model": "travel.image",
+    "pk": 2,
+    "fields": {
+        "title": "SGR Experience",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "location": 1,
+        "img": "pic/22/interior-of-first-class-coach.jpg",
+        "category": [
+            1,
+            5
+        ],
+        "tags": [
+            1
+        ]
+    }
+},
+{
+    "model": "travel.image",
+    "pk": 3,
+    "fields": {
+        "title": "Enjoyed Game Drive at Masai Mara",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "location": 7,
+        "img": "pic/22/masai-mara.jpg",
+        "category": [
+            3
+        ],
+        "tags": [
+            4
+        ]
+    }
+},
+{
+    "model": "travel.image",
+    "pk": 4,
+    "fields": {
+        "title": "Easter Holiday in Watamu",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "location": 8,
+        "img": "pic/22/Watamu-Kenya.jpg",
+        "category": [
+            1,
+            2
+        ],
+        "tags": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "travel.image",
+    "pk": 5,
+    "fields": {
+        "title": "Naivasha Trip",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "location": 9,
+        "img": "pic/22/lake-naivasha-country.jpg",
+        "category": [
+            1,
+            2
+        ],
+        "tags": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "travel.image",
+    "pk": 6,
+    "fields": {
+        "title": "Taste of Lakeside Fish",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "location": 3,
+        "img": "pic/22/taste-of-lakeside-fish.jpg",
+        "category": [
+            4,
+            5
+        ],
+        "tags": [
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "travel.tag",
+    "pk": 1,
+    "fields": {
+        "name": "Travel"
+    }
+},
+{
+    "model": "travel.tag",
+    "pk": 2,
+    "fields": {
+        "name": "Fun"
+    }
+},
+{
+    "model": "travel.tag",
+    "pk": 3,
+    "fields": {
+        "name": "Food"
+    }
+},
+{
+    "model": "travel.tag",
+    "pk": 4,
+    "fields": {
+        "name": "Adventure"
+    }
+},
+{
+    "model": "travel.location",
+    "pk": 1,
+    "fields": {
+        "name": "Nairobi"
+    }
+},
+{
+    "model": "travel.location",
+    "pk": 2,
+    "fields": {
+        "name": "Mombasa"
+    }
+},
+{
+    "model": "travel.location",
+    "pk": 3,
+    "fields": {
+        "name": "Kisumu"
+    }
+},
+{
+    "model": "travel.location",
+    "pk": 4,
+    "fields": {
+        "name": "Kitale"
+    }
+},
+{
+    "model": "travel.location",
+    "pk": 5,
+    "fields": {
+        "name": "Mombasa"
+    }
+},
+{
+    "model": "travel.location",
+    "pk": 6,
+    "fields": {
+        "name": "Mauritius"
+    }
+},
+{
+    "model": "travel.location",
+    "pk": 7,
+    "fields": {
+        "name": "Masai Mara"
+    }
+},
+{
+    "model": "travel.location",
+    "pk": 8,
+    "fields": {
+        "name": "Watamu, Kenya"
+    }
+},
+{
+    "model": "travel.location",
+    "pk": 9,
+    "fields": {
+        "name": "Naivasha"
+    }
+},
+{
+    "model": "travel.category",
+    "pk": 1,
+    "fields": {
+        "name": "Travel"
+    }
+},
+{
+    "model": "travel.category",
+    "pk": 2,
+    "fields": {
+        "name": "Fun"
+    }
+},
+{
+    "model": "travel.category",
+    "pk": 3,
+    "fields": {
+        "name": "Adventure"
+    }
+},
+{
+    "model": "travel.category",
+    "pk": 4,
+    "fields": {
+        "name": "Food"
+    }
+},
+{
+    "model": "travel.category",
+    "pk": 5,
+    "fields": {
+        "name": "Experience"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add category",
+        "content_type": [
+            "travel",
+            "category"
+        ],
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change category",
+        "content_type": [
+            "travel",
+            "category"
+        ],
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": [
+            "travel",
+            "category"
+        ],
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view category",
+        "content_type": [
+            "travel",
+            "category"
+        ],
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add location",
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "codename": "add_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change location",
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "codename": "change_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete location",
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "codename": "delete_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view location",
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "codename": "view_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add tag",
+        "content_type": [
+            "travel",
+            "tag"
+        ],
+        "codename": "add_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change tag",
+        "content_type": [
+            "travel",
+            "tag"
+        ],
+        "codename": "change_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete tag",
+        "content_type": [
+            "travel",
+            "tag"
+        ],
+        "codename": "delete_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view tag",
+        "content_type": [
+            "travel",
+            "tag"
+        ],
+        "codename": "view_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add image",
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "codename": "add_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change image",
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "codename": "change_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete image",
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "codename": "delete_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view image",
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "codename": "view_image"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$o0pSAGMOdYAJwTuXoFpGME$WySIpwSfy10raiyyW43Xvv2BuTQM60J/Q1xDCokf/Bg=",
+        "last_login": "2022-05-29T18:49:14.075Z",
+        "is_superuser": true,
+        "username": "nimrod",
+        "first_name": "",
+        "last_name": "",
+        "email": "alroude.chitayi@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-05-29T18:48:41.397Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-05-29T18:54:04.452Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Travel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-05-29T18:54:11.218Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "Fun",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-05-29T18:54:19.300Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "Adventure",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-05-29T18:54:27.355Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "category"
+        ],
+        "object_id": "4",
+        "object_repr": "Food",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-05-29T18:54:35.519Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "category"
+        ],
+        "object_id": "5",
+        "object_repr": "Experience",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-05-29T18:54:49.648Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "object_id": "1",
+        "object_repr": "Nairobi",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-05-29T18:54:56.107Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "object_id": "2",
+        "object_repr": "Mombasa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2022-05-29T18:55:02.296Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "object_id": "3",
+        "object_repr": "Kisumu",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2022-05-29T18:55:08.070Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "object_id": "4",
+        "object_repr": "Kitale",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2022-05-29T18:55:17.671Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "object_id": "5",
+        "object_repr": "Mombasa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2022-05-29T18:55:29.694Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "object_id": "6",
+        "object_repr": "Mauritius",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2022-05-29T18:55:39.195Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "object_id": "7",
+        "object_repr": "Masai Mara",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2022-05-29T18:56:00.965Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "tag"
+        ],
+        "object_id": "1",
+        "object_repr": "Travel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2022-05-29T18:56:08.521Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "tag"
+        ],
+        "object_id": "2",
+        "object_repr": "Fun",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2022-05-29T18:56:14.560Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "tag"
+        ],
+        "object_id": "3",
+        "object_repr": "Food",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2022-05-29T18:56:26.811Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "tag"
+        ],
+        "object_id": "4",
+        "object_repr": "Adventure",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2022-05-29T18:57:52.015Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "object_id": "1",
+        "object_repr": "The taste of diversity: food tour in Mauritius",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2022-05-29T18:58:49.909Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "object_id": "2",
+        "object_repr": "SGR Experience",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2022-05-29T18:59:47.622Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "object_id": "3",
+        "object_repr": "Enjoyed Game Drive at Masai Mara",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2022-05-29T19:00:33.486Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "object_id": "8",
+        "object_repr": "Watamu, Kenya",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2022-05-29T19:01:01.836Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "object_id": "4",
+        "object_repr": "Easter Holiday in Watamu",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2022-05-30T04:55:39.143Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "location"
+        ],
+        "object_id": "9",
+        "object_repr": "Naivasha",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2022-05-30T04:56:55.585Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "object_id": "5",
+        "object_repr": "Naivasha Trip",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2022-05-30T04:59:09.388Z",
+        "user": [
+            "nimrod"
+        ],
+        "content_type": [
+            "travel",
+            "image"
+        ],
+        "object_id": "6",
+        "object_repr": "Taste of Lakeside Fish",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
