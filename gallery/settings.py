@@ -13,10 +13,10 @@ SECRET_KEY = 'b!5vs)8i%2#f&44s5s-#onqs9tho+vzgf^u62m#ni647rb$n0g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # If Development
-# DEBUG = True
+DEBUG = True
 
 # If Production
-DEBUG = False
+# DEBUG = False
 
 ALLOWED_HOSTS = ['bignimz-diary.herokuapp.com']
 
