@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -11,7 +12,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'b!5vs)8i%2#f&44s5s-#onqs9tho+vzgf^u62m#ni647rb$n0g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# If Development
+# DEBUG = True
+
+# If Production
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -37,6 +42,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'gallery.urls'
@@ -63,15 +69,17 @@ WSGI_APPLICATION = 'gallery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'imagesdb',
-        'USER': 'msafiri',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'imagesdb',
+#         'USER': 'msafiri',
+#         'PASSWORD': '123456',
+#         'HOST': 'localhost',
+#     }
+# }
+
+DATABASES = {'default': dj_database_url.config(default='postgres://msafiri:123456@localhost/imagesdb')}
 
 
 # Password validation
@@ -114,3 +122,7 @@ STATIC_URL = '/static/'
 STATIC_FILES_DIRS = [os.path.join(BASE_DIR, 'static')],
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+# Whitenoise Settings
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
