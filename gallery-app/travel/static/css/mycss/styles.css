@@ -28,7 +28,7 @@
     height: 130px;
     margin-right: 20px;
     margin-bottom: 20px;
-    background-image: linear-gradient(rgba(1,1,1,0.5), rgba(2,2,2, 0.8));
+    /* background-image: linear-gradient(rgba(1,1,1,0.5), rgba(2,2,2, 0.8)); */
     text-align: center;
     display: flex;
     align-items: center;

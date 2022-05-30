@@ -18,7 +18,7 @@ SECRET_KEY = 'b!5vs)8i%2#f&44s5s-#onqs9tho+vzgf^u62m#ni647rb$n0g'
 # If Production
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://bignimz-diary.herokuapp.com']
 
 
 # Application definition
