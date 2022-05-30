@@ -20,6 +20,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['https://bignimz-diary.herokuapp.com']
 
+DISABLE_COLLECTSTATIC=1
+
 
 # Application definition
 
